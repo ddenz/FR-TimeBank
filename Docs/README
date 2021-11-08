@@ -5,6 +5,20 @@ License
 -------
 French TimeBank Corpus by André Bittar is licensed under the Lesser General Public License for Linguistic Resources. Details of the license are given in the file LICENSE.
 
+Citation
+--------
+@inproceedings{bittar-etal-2011-french,
+    title = "{F}rench {T}ime{B}ank: An {ISO}-{T}ime{ML} Annotated Reference Corpus",
+    author = "Bittar, Andr{\'e}  and Amsili, Pascal and Denis, Pascal and Danlos, Laurence",
+    booktitle = "Proceedings of the 49th Annual Meeting of the Association for Computational Linguistics: Human Language Technologies",
+    month = jun,
+    year = "2011",
+    address = "Portland, Oregon, USA",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/P11-2023",
+    pages = "130--134",
+}
+
 Metdata
 -------
 Corpus name: French TimeBank
