@@ -1,0 +1,64 @@
+French TimeBank 1.1 Documentation
+---------------------------------
+
+License
+-------
+French TimeBank Corpus by André Bittar is licensed under the Lesser General Public License for Linguistic Resources. Details of the license are given in the file LICENSE.
+
+Metdata
+-------
+Corpus name: French TimeBank
+Version: 1.1
+Author: André Bittar (andre.bittar@gmail.com)
+Language: French (France)
+Data format: ISO-TimeML compliant XML, inline annotation
+Text source: Articles extracted from the Est Républicain/CNRTL corpus of news articles
+             Original text corpus available for download at http://www.cnrtl.fr/corpus/estrepublicain/
+
+Corpus structure
+----------------
+
+FR-TimeBank/Docs/
+	README				This file
+	LICENSE				The text of the Lesser General Public License for Linguistic Resources
+	FR-Annotation-Guide.pdf		The full ISO-TimeML annotation guidelines for French used in annotation
+
+FR-TimeBank/Data/			108 ISO-TimeML annotated documents
+
+FR-TimeBank/Validation/			XML DTD, as well as the shell script used to validate the corpus documents
+
+Basic corpus statistics
+-----------------------
+
+Documents: 108
+Tokens: 15,423 (basic whitespace-separated)
+EVENT: 2,115
+TIMEX3: 533
+SIGNAL: 288
+ALINK: 35
+SLINK: 452
+TLINK: 2,392
+Size of corpus: 840Kb
+
+Version notes
+-------------
+2013.07.04
+----------
+Modifications by Véronique Moriceau (moriceau@limsi.fr) with help from Xavier Tannier xtannier@limsi.fr
+** deleted file 1999-05-21-0108 that only contained normalised times "Thh:mm" instead of "YYYY-MM-DDThh:mm"
+
+** correction of normalised values :
+1999-05-19-0543.tml	14 h 	T14:00 => 1999-05-19T14:00
+1999-05-30-0974.tml	début des années 60	196 => 196X
+1999-07-29-0552.tml	années 60	196 => 196X
+1999-07-29-0552.tml	XIXe siècle	18 => 18XX
+1999-07-09-0441.tml	cette semaine	W36 => W27
+
+** date + time tag splits <TIMEX3>jour à heure</TIMEX3> => <TIMEX3>jour</TIMEX3> à <TIMEX3>heure</TIMEX3>
+1999-05-26-1342.tml	samedi à 8 h
+1999-07-23-0052.tml	samedi 24 juillet à 15 h 45
+2002-05-11-0410.tml	jeudi 23 mai, à 20 h 30
+2003-01-04-1029.tml	Dimanche 5 janvier, à 9 h 15
+2003-01-04-1029.tml	lundi 17 février, à 14 h 30
+
+** transformation of type=DATE to type=TIME when the value is of the type YYY-MM-DDT...
